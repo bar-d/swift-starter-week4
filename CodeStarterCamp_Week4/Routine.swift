@@ -6,18 +6,18 @@
 //
 
 struct Routine {
-    var name: String
-    var exercisesArray: [Exercise]
-    
-    func start() {
-        print("--------------\n\(self.name)을 시작합니다.")
-        for elements in exercisesArray {
-            print("\(elements.name)")
-            elements.action()
-        }
-        print("--------------")
-        
-    }
-}
+     let name: String
+     let exerciseArray: [Exercise]
 
-
+    func playMyRoutine(condition: BodyCondition) {
+         print("""
+            --------------
+            \(name)을 시작합니다.
+            """)
+         for exercises in exerciseArray {
+             print("\(exercises.name)")
+             exercises.action()
+         }
+         condition.currentBodyCondition()
+     }
+ }

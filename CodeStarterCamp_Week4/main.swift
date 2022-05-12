@@ -6,14 +6,8 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-let yehaRoutine = Routine(name: "hellRoutine",
-                        exercisesArray: [윗몸일으키기, 윗몸일으키기, 동적휴식, 스쿼트, 스쿼트, 동적휴식, 오래달리기, 오래달리기])
-let yehaFitnessCenter = FitnessCenter(goalOfBodyCondition: .init(상체근력: 50, 하체근력: 50, 근지구력: 50, 피로도: 20),
-                                       fitnessCenterMember: newbbie)
+let myBodyCondition = BodyCondition(upperBodyStrength: 0, lowerBodyStrength: 0, muscularEndurance: 0, fatigue: 0)
+let myRoutine: Routine = Routine(name: "helloRoutine", exerciseArray: [윗몸일으키기, 윗몸일으키기, 동적휴식, 스쿼트, 스쿼트, 동적휴식, 오래달리기, 오래달리기])
 
-yehaRoutine.start()
-myBodyCondition.printCurrentCondition()
+myRoutine.playMyRoutine(condition: myBodyCondition)
 
-
-yehaFitnessCenter.fitnessCenterMember = hellChang
-yehaFitnessCenter.programStart()
