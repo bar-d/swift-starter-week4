@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		34811DE8274B93FB00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DE7274B93FB00A1E994 /* main.swift */; };
+		D7B3FC32282A6B000010B34E /* RandomNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FC31282A6B000010B34E /* RandomNum.swift */; };
+		D7B3FC34282ADFEF0010B34E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FC33282ADFEF0010B34E /* Person.swift */; };
+		D7CCC0CA282C15C400A021C7 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */; };
+		D7CCC0CC282C165000A021C7 /* BodyCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC0CB282C165000A021C7 /* BodyCondition.swift */; };
+		D7CCC0CE282C16EF00A021C7 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC0CD282C16EF00A021C7 /* Exercise.swift */; };
+		D7CCC0D0282C172400A021C7 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC0CF282C172400A021C7 /* Routine.swift */; };
+		D7EB888B282D26BB0077F9CF /* FitnessCenterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		34811DE4274B93FB00A1E994 /* CodeStarterCamp_Week4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week4; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DE7274B93FB00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D7B3FC31282A6B000010B34E /* RandomNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNum.swift; sourceTree = "<group>"; };
+		D7B3FC33282ADFEF0010B34E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessCenter.swift; sourceTree = "<group>"; };
+		D7CCC0CB282C165000A021C7 /* BodyCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCondition.swift; sourceTree = "<group>"; };
+		D7CCC0CD282C16EF00A021C7 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		D7CCC0CF282C172400A021C7 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessCenterError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				34811DE7274B93FB00A1E994 /* main.swift */,
+				D7CCC0CF282C172400A021C7 /* Routine.swift */,
+				D7CCC0CD282C16EF00A021C7 /* Exercise.swift */,
+				D7B3FC33282ADFEF0010B34E /* Person.swift */,
+				D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */,
+				D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */,
+				D7CCC0CB282C165000A021C7 /* BodyCondition.swift */,
+				D7B3FC31282A6B000010B34E /* RandomNum.swift */,
 			);
 			path = CodeStarterCamp_Week4;
 			sourceTree = "<group>";
@@ -119,7 +140,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B3FC34282ADFEF0010B34E /* Person.swift in Sources */,
+				D7CCC0D0282C172400A021C7 /* Routine.swift in Sources */,
+				D7EB888B282D26BB0077F9CF /* FitnessCenterError.swift in Sources */,
 				34811DE8274B93FB00A1E994 /* main.swift in Sources */,
+				D7B3FC32282A6B000010B34E /* RandomNum.swift in Sources */,
+				D7CCC0CC282C165000A021C7 /* BodyCondition.swift in Sources */,
+				D7CCC0CA282C15C400A021C7 /* FitnessCenter.swift in Sources */,
+				D7CCC0CE282C16EF00A021C7 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
