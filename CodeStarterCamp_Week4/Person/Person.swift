@@ -17,7 +17,7 @@ struct Person {
     var name: String
     var bodyCondition: BodyCondition
     
-    //MARK: - exercise(for set:, routine)
+    //MARK: - exercise(for set:, routine:)
     func exercise(for set: Int, routine: Routine) throws {
         print("""
             --------------

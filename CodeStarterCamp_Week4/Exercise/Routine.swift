@@ -10,6 +10,7 @@ struct Routine {
     let name: String
     let exerciseArray: [Exercise]
     
+    //MARK: - start(condition:)
     func start(condition: BodyCondition) throws {
         for exercises in exerciseArray {
             guard (center.fitnessCenterMember?.bodyCondition.fatigue ?? -100) <= 100 else { throw FitnessCenterError.overFatigue }

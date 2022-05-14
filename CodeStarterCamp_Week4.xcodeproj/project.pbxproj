@@ -84,13 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				34811DE7274B93FB00A1E994 /* main.swift */,
-				D7CCC0CF282C172400A021C7 /* Routine.swift */,
-				D7CCC0CD282C16EF00A021C7 /* Exercise.swift */,
-				D7B3FC33282ADFEF0010B34E /* Person.swift */,
 				D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */,
-				D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */,
-				D7CCC0CB282C165000A021C7 /* BodyCondition.swift */,
-				D7B3FC31282A6B000010B34E /* RandomNum.swift */,
+				D79AB7B0282F9B8B003A5C9D /* Person */,
+				D79AB7AD282F9B22003A5C9D /* Exercise */,
+				D79AB7AF282F9B74003A5C9D /* Error */,
+				D79AB7AE282F9B65003A5C9D /* Enum */,
 			);
 			path = CodeStarterCamp_Week4;
 			sourceTree = "<group>";
@@ -101,6 +99,40 @@
 				D79AB778282EAAB4003A5C9D /* ReadLineTest.swift */,
 			);
 			path = ReadLineTest;
+			sourceTree = "<group>";
+		};
+		D79AB7AD282F9B22003A5C9D /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				D7CCC0CD282C16EF00A021C7 /* Exercise.swift */,
+				D7CCC0CF282C172400A021C7 /* Routine.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		D79AB7AE282F9B65003A5C9D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D7B3FC31282A6B000010B34E /* RandomNum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D79AB7AF282F9B74003A5C9D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D79AB7B0282F9B8B003A5C9D /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				D7B3FC33282ADFEF0010B34E /* Person.swift */,
+				D7CCC0CB282C165000A021C7 /* BodyCondition.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
