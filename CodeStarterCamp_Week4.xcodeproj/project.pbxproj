@@ -72,15 +72,39 @@
 			isa = PBXGroup;
 			children = (
 				34811DE7274B93FB00A1E994 /* main.swift */,
-				D7CCC0CF282C172400A021C7 /* Routine.swift */,
-				D7CCC0CD282C16EF00A021C7 /* Exercise.swift */,
-				D7B3FC33282ADFEF0010B34E /* Person.swift */,
-				D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */,
-				D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */,
-				D7CCC0CB282C165000A021C7 /* BodyCondition.swift */,
+				D79AB7B3282F9BD4003A5C9D /* Person */,
+				D79AB7B2282F9BCF003A5C9D /* Exercise */,
+				D79AB7B1282F9BCC003A5C9D /* Enum */,
 				D7B3FC31282A6B000010B34E /* RandomNum.swift */,
+				D7EB888A282D26BB0077F9CF /* FitnessCenterError.swift */,
 			);
 			path = CodeStarterCamp_Week4;
+			sourceTree = "<group>";
+		};
+		D79AB7B1282F9BCC003A5C9D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D79AB7B2282F9BCF003A5C9D /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				D7CCC0CD282C16EF00A021C7 /* Exercise.swift */,
+				D7CCC0CF282C172400A021C7 /* Routine.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		D79AB7B3282F9BD4003A5C9D /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				D7B3FC33282ADFEF0010B34E /* Person.swift */,
+				D7CCC0CB282C165000A021C7 /* BodyCondition.swift */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
