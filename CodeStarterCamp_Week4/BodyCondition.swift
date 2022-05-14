@@ -13,6 +13,7 @@
 
 //운동을 진행하면 BodyCondition 인스턴스의 프로퍼티에 할당된 값이 변화합니다.
 
+//MARK: - BodyCondition
 class BodyCondition {
     var upperBodyStrength: Int
     var lowerBodyStrength: Int
@@ -26,6 +27,7 @@ class BodyCondition {
         self.fatigue = fatigue
     }
     
+    //MARK: - currentBodyCondition()
     func currentBodyCondition() {
         print("""
             --------------

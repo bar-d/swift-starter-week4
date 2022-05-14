@@ -5,10 +5,12 @@
 //  Created by 바드 on 2022/05/12.
 //
 
+//MARK: - Routine
 struct Routine {
      let name: String
      let exerciseArray: [Exercise]
 
+    //MARK: - playMyRoutine(condition:)
     func playMyRoutine(condition: BodyCondition) {
          print("""
             --------------

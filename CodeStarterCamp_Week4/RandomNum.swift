@@ -5,6 +5,7 @@
 //  Created by 바드 on 2022/05/10.
 //
 
+//MARK: - RandomNum
 enum RandomNum {
     static let tenToTwenty: Int = Int.random(in: 10...20)
     static let twentyToThirty: Int = Int.random(in: 20...30)
