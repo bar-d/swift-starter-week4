@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34811DE8274B93FB00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DE7274B93FB00A1E994 /* main.swift */; };
+		D79AB779282EAAB4003A5C9D /* ReadLineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79AB778282EAAB4003A5C9D /* ReadLineTest.swift */; };
 		D7B3FC32282A6B000010B34E /* RandomNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FC31282A6B000010B34E /* RandomNum.swift */; };
 		D7B3FC34282ADFEF0010B34E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FC33282ADFEF0010B34E /* Person.swift */; };
 		D7CCC0CA282C15C400A021C7 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		34811DE4274B93FB00A1E994 /* CodeStarterCamp_Week4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week4; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DE7274B93FB00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D79AB776282EAAB4003A5C9D /* ReadLineTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadLineTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79AB778282EAAB4003A5C9D /* ReadLineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadLineTest.swift; sourceTree = "<group>"; };
 		D7B3FC31282A6B000010B34E /* RandomNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNum.swift; sourceTree = "<group>"; };
 		D7B3FC33282ADFEF0010B34E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D7CCC0C9282C15C400A021C7 /* FitnessCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessCenter.swift; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D79AB773282EAAB4003A5C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				34811DE6274B93FB00A1E994 /* CodeStarterCamp_Week4 */,
+				D79AB777282EAAB4003A5C9D /* ReadLineTest */,
 				34811DE5274B93FB00A1E994 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				34811DE4274B93FB00A1E994 /* CodeStarterCamp_Week4 */,
+				D79AB776282EAAB4003A5C9D /* ReadLineTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +93,14 @@
 				D7B3FC31282A6B000010B34E /* RandomNum.swift */,
 			);
 			path = CodeStarterCamp_Week4;
+			sourceTree = "<group>";
+		};
+		D79AB777282EAAB4003A5C9D /* ReadLineTest */ = {
+			isa = PBXGroup;
+			children = (
+				D79AB778282EAAB4003A5C9D /* ReadLineTest.swift */,
+			);
+			path = ReadLineTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,17 +123,37 @@
 			productReference = 34811DE4274B93FB00A1E994 /* CodeStarterCamp_Week4 */;
 			productType = "com.apple.product-type.tool";
 		};
+		D79AB775282EAAB4003A5C9D /* ReadLineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79AB77C282EAAB5003A5C9D /* Build configuration list for PBXNativeTarget "ReadLineTest" */;
+			buildPhases = (
+				D79AB772282EAAB4003A5C9D /* Sources */,
+				D79AB773282EAAB4003A5C9D /* Frameworks */,
+				D79AB774282EAAB4003A5C9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadLineTest;
+			productName = ReadLineTest;
+			productReference = D79AB776282EAAB4003A5C9D /* ReadLineTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		34811DDC274B93FB00A1E994 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					34811DE3274B93FB00A1E994 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					D79AB775282EAAB4003A5C9D = {
+						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
@@ -131,9 +171,20 @@
 			projectRoot = "";
 			targets = (
 				34811DE3274B93FB00A1E994 /* CodeStarterCamp_Week4 */,
+				D79AB775282EAAB4003A5C9D /* ReadLineTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79AB774282EAAB4003A5C9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34811DE0274B93FB00A1E994 /* Sources */ = {
@@ -148,6 +199,14 @@
 				D7CCC0CC282C165000A021C7 /* BodyCondition.swift in Sources */,
 				D7CCC0CA282C15C400A021C7 /* FitnessCenter.swift in Sources */,
 				D7CCC0CE282C16EF00A021C7 /* Exercise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79AB772282EAAB4003A5C9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79AB779282EAAB4003A5C9D /* ReadLineTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +346,40 @@
 			};
 			name = Release;
 		};
+		D79AB77A282EAAB5003A5C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R92FDJTURC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bard.ReadLineTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D79AB77B282EAAB5003A5C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R92FDJTURC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Bard.ReadLineTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +397,15 @@
 			buildConfigurations = (
 				34811DEC274B93FB00A1E994 /* Debug */,
 				34811DED274B93FB00A1E994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79AB77C282EAAB5003A5C9D /* Build configuration list for PBXNativeTarget "ReadLineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79AB77A282EAAB5003A5C9D /* Debug */,
+				D79AB77B282EAAB5003A5C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

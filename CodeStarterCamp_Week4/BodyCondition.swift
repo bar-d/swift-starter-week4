@@ -12,27 +12,26 @@
 //피로도
 
 //운동을 진행하면 BodyCondition 인스턴스의 프로퍼티에 할당된 값이 변화합니다.
-
-class BodyCondition {
-    var upperBodyStrength: Int
-    var lowerBodyStrength: Int
-    var muscularEndurance: Int
-    var fatigue: Int
+//MARK: - BodyCondition
+struct BodyCondition {
+     var upperBodyStrength: Int = 0
+     var lowerBodyStrength: Int = 0
+     var muscularEndurance: Int = 0
+     var fatigue: Int = 0
     
-    init(upperBodyStrength: Int,lowerBodyStrength: Int, muscularEndurance: Int,  fatigue: Int) {
+    init(upperBodyStrength: Int = 0,lowerBodyStrength: Int = 0, muscularEndurance: Int = 0,  fatigue: Int = 0) {
         self.upperBodyStrength = upperBodyStrength
         self.lowerBodyStrength = lowerBodyStrength
         self.muscularEndurance = muscularEndurance
         self.fatigue = fatigue
     }
-    
+    //MARK: - currentBodyCondition()
     func currentBodyCondition() {
         print("""
-            --------------
-            현재의 컨디션은 다음과 같습니다.
+            예하하하! \(center.fitnessCenterMember?.name ?? "")의 컨디션은 다음과 같습니다.
             상체근력: \(upperBodyStrength)
             하체근력: \(lowerBodyStrength)
-            근지구력: \(fatigue)
+            근지구력: \(muscularEndurance)
             피로도: \(fatigue)
             """)
     }

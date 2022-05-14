@@ -5,19 +5,16 @@
 //  Created by 바드 on 2022/05/12.
 //
 
+//MARK: - Routine
 struct Routine {
-     let name: String
-     let exerciseArray: [Exercise]
-
-    func playMyRoutine(condition: BodyCondition) {
-         print("""
-            --------------
-            \(name)을 시작합니다.
-            """)
-         for exercises in exerciseArray {
-             print("\(exercises.name)")
-             exercises.action()
-         }
-         condition.currentBodyCondition()
-     }
- }
+    let name: String
+    let exerciseArray: [Exercise]
+    
+    func start(condition: BodyCondition) throws {
+        for exercises in exerciseArray {
+            guard (center.fitnessCenterMember?.bodyCondition.fatigue ?? -100) <= 100 else { throw FitnessCenterError.overFatigue }
+            print("\(exercises.name)")
+            exercises.action()
+        }
+    }
+}
