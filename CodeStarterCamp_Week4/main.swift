@@ -9,24 +9,24 @@
 //let yehaBodyCondition = BodyCondition()
 //MARK: - Exercise
 let 윗몸일으키기: Exercise = Exercise(name: "윗몸일으키기") {
-    center.fitnessCenterMember?.bodyCondition.upperBodyStrength += RandomNum.tenToTwenty
-    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNum.tenToTwenty
+    center.fitnessCenterMember?.bodyCondition.upperBodyStrength += RandomNumber.tenToTwenty
+    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNumber.tenToTwenty
 }
 
 let 스쿼트: Exercise = Exercise(name: "스쿼트") {
-    center.fitnessCenterMember?.bodyCondition.lowerBodyStrength += RandomNum.twentyToThirty
-    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNum.tenToTwenty
+    center.fitnessCenterMember?.bodyCondition.lowerBodyStrength += RandomNumber.twentyToThirty
+    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNumber.tenToTwenty
 }
     
 let 오래달리기: Exercise = Exercise(name: "오래달리기") {
-    center.fitnessCenterMember?.bodyCondition.upperBodyStrength += RandomNum.fiveToTen
-    center.fitnessCenterMember?.bodyCondition.lowerBodyStrength += RandomNum.fiveToTen
-    center.fitnessCenterMember?.bodyCondition.muscularEndurance += RandomNum.twentyToThirty
-    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNum.twentyToThirty
+    center.fitnessCenterMember?.bodyCondition.upperBodyStrength += RandomNumber.fiveToTen
+    center.fitnessCenterMember?.bodyCondition.lowerBodyStrength += RandomNumber.fiveToTen
+    center.fitnessCenterMember?.bodyCondition.muscularEndurance += RandomNumber.twentyToThirty
+    center.fitnessCenterMember?.bodyCondition.fatigue += RandomNumber.twentyToThirty
 }
 
 let 동적휴식: Exercise = Exercise(name: "동적휴식") {
-    center.fitnessCenterMember?.bodyCondition.fatigue -= RandomNum.fiveToTen
+    center.fitnessCenterMember?.bodyCondition.fatigue -= RandomNumber.fiveToTen
 }
 
 //MARK: - Person

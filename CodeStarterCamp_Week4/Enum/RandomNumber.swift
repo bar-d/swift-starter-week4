@@ -6,7 +6,7 @@
 //
 
 //MARK: - RandomNum
-enum RandomNum {
+enum RandomNumber {
     static let tenToTwenty: Int = Int.random(in: 10...20)
     static let twentyToThirty: Int = Int.random(in: 20...30)
     static let fiveToTen: Int = Int.random(in: 5...10)
