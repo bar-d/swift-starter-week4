@@ -105,14 +105,14 @@ class FitnessCenter {
         if goalOfBodyCondition.upperBodyStrength <= fitnessCenterMember?.bodyCondition.upperBodyStrength ?? -100,
             goalOfBodyCondition.lowerBodyStrength <= fitnessCenterMember?.bodyCondition.lowerBodyStrength ?? -100,
            goalOfBodyCondition.muscularEndurance <= fitnessCenterMember?.bodyCondition.muscularEndurance ?? -100 {
-            printSuccess()
+            printGoalOfBodyConditionSuccess()
         } else {
             printGoalOfBodyConditionFail()
         }
     }
     
-    //MARK: - printSuccess()
-    func printSuccess() {
+    //MARK: - printGoalOfBodyConditionSuccess()
+    func printGoalOfBodyConditionSuccess() {
         print("""
             --------------
             예하하하! 성공입니다!
