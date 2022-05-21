@@ -28,7 +28,7 @@ class FitnessCenter {
             try setGoalOfBodyCondition()
             try setRoutine()
         } catch {
-            center.handle(error as! FitnessCenterError)
+            center.handle(error as? FitnessCenterError ?? FitnessCenterError.unrecognizedInput)
         }
     }
     
