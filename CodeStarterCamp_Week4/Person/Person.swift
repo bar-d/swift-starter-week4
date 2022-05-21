@@ -24,7 +24,8 @@ struct Person {
             예하하하! \(routine.name)을 \(set)set 시작합니다.
             """)
         var setCount = 0
-        while (center.fitnessCenterMember?.bodyCondition.fatigue ?? -100) <= 100, setCount != set {
+        while (center.fitnessCenterMember?.bodyCondition.fatigue ?? -100) <= 100,
+                setCount != set {
             for set in 1...set {
                 try routine.start(condition: self.bodyCondition)
                 setCount += 1

@@ -80,7 +80,7 @@ class FitnessCenter {
             2. \(routines[1].name)
             3. \(routines[2].name)
             """)
-        let routineChoice  = try checkIsInputNumber()
+        let routineChoice = try checkIsInputNumber()
         guard routineChoice <= (routines.count) else { throw FitnessCenterError.unrecognizedInput }
         let routine = routines[routineChoice - 1]
         
