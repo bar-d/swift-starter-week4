@@ -6,7 +6,6 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-//let yehaBodyCondition = BodyCondition()
 //MARK: - Exercise
 let 윗몸일으키기: Exercise = Exercise(name: "윗몸일으키기") {
     center.fitnessCenterMember?.bodyCondition.upperBodyStrength += RandomNumber.tenToTwenty
