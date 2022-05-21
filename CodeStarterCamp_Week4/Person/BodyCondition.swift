@@ -14,10 +14,10 @@
 //운동을 진행하면 BodyCondition 인스턴스의 프로퍼티에 할당된 값이 변화합니다.
 //MARK: - BodyCondition
 struct BodyCondition {
-     var upperBodyStrength: Int = 0
-     var lowerBodyStrength: Int = 0
-     var muscularEndurance: Int = 0
-     var fatigue: Int = 0
+     var upperBodyStrength: Int
+     var lowerBodyStrength: Int
+     var muscularEndurance: Int
+     var fatigue: Int 
     
     init(upperBodyStrength: Int = 0,lowerBodyStrength: Int = 0, muscularEndurance: Int = 0,  fatigue: Int = 0) {
         self.upperBodyStrength = upperBodyStrength
