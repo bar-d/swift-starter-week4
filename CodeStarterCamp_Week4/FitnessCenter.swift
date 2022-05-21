@@ -32,15 +32,14 @@ class FitnessCenter {
         }
     }
     
-    //MARK: - checkMemberName() 멤버가 맞는지 확인
+    //MARK: - checkMemberName() 공백제거, 빈 문자열 처리 및 숫자 처리를 통해 멤버가 맞는지 확인 
     func checkMemberName() throws  {
-        // 공백제거 및 빈 문자열 처리
         print("예하하하! 안녕하세요. 예하 피트니스 센터입니다. 회원님의 이름은 무엇인가요?")
         guard let userInput = readLine()?.trimmingCharacters(in: .whitespaces),
                 userInput.isEmpty != true else
         { throw FitnessCenterError.unrecognizedInput }
-        // 숫자 처리
-        if userInput.filter({$0.isNumber}).count != 0 {
+        
+        if userInput.filter({ $0.isNumber }).count != 0 {
             throw FitnessCenterError.unrecognizedInput
         }
         else if userInput != fitnessCenterMember?.name {
