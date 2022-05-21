@@ -56,7 +56,9 @@ class FitnessCenter {
     
     //MARK: - checkIsInputNumber() 인풋이 숫자인지
     func checkIsInputNumber() throws -> Int{
-        guard let userInput = readLine()?.trimmingCharacters(in: .whitespaces), userInput.filter({$0.isNumber}).count != 0 else { throw FitnessCenterError.unrecognizedInput }
+        guard let userInput = readLine()?.trimmingCharacters(in: .whitespaces),
+                            userInput.filter({$0.isNumber}).count != 0 else
+                            { throw FitnessCenterError.unrecognizedInput }
         guard let intUserInput = Int(userInput) else { return 0 }
         return intUserInput
     }
@@ -81,7 +83,8 @@ class FitnessCenter {
             3. \(routines[2].name)
             """)
         let routineChoice = try checkIsInputNumber()
-        guard routineChoice <= (routines.count) else { throw FitnessCenterError.unrecognizedInput }
+        guard routineChoice <= (routines.count) else
+                            { throw FitnessCenterError.unrecognizedInput }
         let routine = routines[routineChoice - 1]
         
         print("예하하하! 몇 세트 반복하시겠어요?")
@@ -101,7 +104,7 @@ class FitnessCenter {
     func checkGoal() {
         if goalOfBodyCondition.upperBodyStrength <= fitnessCenterMember?.bodyCondition.upperBodyStrength ?? -100,
             goalOfBodyCondition.lowerBodyStrength <= fitnessCenterMember?.bodyCondition.lowerBodyStrength ?? -100,
-           goalOfBodyCondition.muscularEndurance <= fitnessCenterMember?.bodyCondition.muscularEndurance ?? -100{
+           goalOfBodyCondition.muscularEndurance <= fitnessCenterMember?.bodyCondition.muscularEndurance ?? -100 {
             printSuccess()
         } else {
             printGoalOfBodyConditionFail()
