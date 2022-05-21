@@ -25,7 +25,7 @@ struct Person {
             """)
         var setCount = 0
         while (center.fitnessCenterMember?.bodyCondition.fatigue ?? -100) <= 100, setCount != set {
-            for sets in 1...set {
+            for set in 1...set {
                 try routine.start(condition: self.bodyCondition)
                 setCount += 1
             }
